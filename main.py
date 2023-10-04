@@ -31,9 +31,9 @@ class App(tk.Tk):
         self.geometry("500x200")
 
         # Label
-        self.intro_label = Label(self, text='Welcome to Real Time Currency Convertor', fg='blue', relief=tk.RAISED,
+        self.intro_label = Label(self, text='EXCHANGE RATE CALCULATOR', fg='black', relief=tk.RAISED,
                                  borderwidth=3)
-        self.intro_label.config(font=('Courier', 15, 'bold'))
+        self.intro_label.config(font=('Helvetica', 15, ))
 
         self.date_label = Label(self,
                                 text=f"1 Rand equals = {self.currency_converter.convert('ZAR', 'USD', 0.053)} USD \n "
